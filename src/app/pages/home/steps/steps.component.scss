@@ -1,0 +1,34 @@
+.step-wrapper { 
+    height: 70vh;
+    background-color: #fefbfb;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+}
+.title{ 
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 23px;
+    color: #1f3348; 
+}
+.desc{ 
+    padding-top: 20px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    color: #1f3348; 
+    line-height: 20px;
+    opacity: 0.7;
+}
+.icons {
+    height: 65px;
+    width: 65px;
+    padding-bottom: 20px;
+ 
+}

@@ -1,0 +1,67 @@
+.nav-wrapper { 
+    height: 70px;
+    background-color: #fefbfb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 100px;
+    align-items: center;
+
+    .logo-part{
+        width: 20%;
+
+        .main-title {
+            font-family: "Montserrat";
+            font-weight: 800;
+            font-size: 26px;
+            color: #1f3348;
+        }
+    }   
+    .menu{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+
+        ul{
+            display: flex;
+           li{ 
+                font-family:  "Montserrat";
+                font-weight: 500;
+                list-style: none;
+                padding:  0 10px ;
+                height: 35px;
+                line-height: 35px;
+                font-size: 13px;
+                width: 80px;
+                text-align: center;
+                text-underline-offset: 0.2em;
+                transition: text-decoration-color 300ms, text-underline-offset 300ms;
+                
+                a {
+                    text-decoration: none;
+                    color: #1f3348;
+                }
+
+                .contact-btn {
+                    color: white;
+                }
+
+                .activeLink {
+                    color: #6347f9;
+                    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+                    text-underline-offset: 0.4em;
+                    text-decoration-color: #6347f9;
+                    text-decoration-thickness: 20% ;
+
+                }
+            }      
+        }
+        .contact {
+            background-color: #6347f9;
+            border-radius: 7px;
+            box-shadow: 3px 3px 20px rgba(99, 71, 249, 0.7);
+           
+           
+        }
+    }
+}
