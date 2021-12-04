@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { NavigationComponent } from './pages/home/navigation/navigation.component';
+import { FooterComponent } from './pages/footer/footer.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

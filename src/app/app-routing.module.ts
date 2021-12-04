@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '' ,
     children:[
       {
         path: 'blog',
@@ -13,6 +12,14 @@ const routes: Routes = [
       {
         path: 'home',
         loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
+      },
+      {
+        path: 'destinations',
+        loadChildren: () => import('./pages/destinations/destinations.module').then(m => m.DestinationsModule)
+      },
+      {
+        path: 'contact',
+        loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
       }
     ]
  }
