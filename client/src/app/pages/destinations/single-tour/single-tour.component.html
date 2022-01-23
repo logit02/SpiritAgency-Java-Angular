@@ -1,1 +1,15 @@
-<p>single-tour works!</p>
+<div class="single-tour-wrapper">
+  <div class="content">
+    <div class="left-pane">
+      <img src='{{tour?.image}}' alt='landscape' class='item-image'>
+    </div>
+    <div class="right-pane">
+      <p class="heading">{{tour?.location}}</p>
+      <p class="description">{{tour?.description}}</p>
+      <div class="small-images">
+       <img *ngFor="let image of tripImages"  src='{{image.imageUrl}}' alt='landscape' class='small-image'>
+      </div>
+      <button class="book-now">Book Now</button>
+    </div>
+  </div>
+</div>

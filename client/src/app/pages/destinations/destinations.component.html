@@ -1,61 +1,11 @@
 <div class="destination-wrapper">
     <p class="heading">Find your journey here!</p>
     <div class="items-wrapper">
-        <div class="item">
-            <img src='https://bit.ly/3Iiq83u' alt='landscape' class='item-image'/>
+        <div class="item" *ngFor="let tour of tours">
+            <img src='{{tour.image}}' alt='landscape' class='item-image' [routerLink]="[tour.id]"/>
                 <div class="item-description">
                     <div class="text-area">
-                        <p>Makhindjauri</p>
-                        <p>3 days 2 nights</p>
-                    </div>
-                    <button>Book Now</button>
-                </div>
-        </div>
-        <div class="item">
-            <img src='https://bit.ly/3Iiq83u' alt='landscape' class='item-image'/>
-                <div class="item-description">
-                    <div class="text-area">
-                        <p>Makhindjauri</p>
-                        <p>3 days 2 nights</p>
-                    </div>
-                    <button>Book Now</button>
-                </div>
-        </div>
-        <div class="item">
-            <img src='https://bit.ly/3Iiq83u' alt='landscape' class='item-image'/>
-                <div class="item-description">
-                    <div class="text-area">
-                        <p>Makhindjauri</p>
-                        <p>3 days 2 nights</p>
-                    </div>
-                    <button>Book Now</button>
-                </div>
-        </div>
-        <div class="item">
-            <img src='https://bit.ly/3Iiq83u' alt='landscape' class='item-image'/>
-                <div class="item-description">
-                    <div class="text-area">
-                        <p>Makhindjauri</p>
-                        <p>3 days 2 nights</p>
-                    </div>
-                    <button>Book Now</button>
-                </div>
-        </div>
-        <div class="item">
-            <img src='https://bit.ly/3Iiq83u' alt='landscape' class='item-image'/>
-                <div class="item-description">
-                    <div class="text-area">
-                        <p>Makhindjauri</p>
-                        <p>3 days 2 nights</p>
-                    </div>
-                    <button>Book Now</button>
-                </div>
-        </div>
-        <div class="item">
-            <img src='https://bit.ly/3Iiq83u' alt='landscape' class='item-image'/>
-                <div class="item-description">
-                    <div class="text-area">
-                        <p>Makhindjauri</p>
+                        <p>{{tour.location}}</p>
                         <p>3 days 2 nights</p>
                     </div>
                     <button>Book Now</button>

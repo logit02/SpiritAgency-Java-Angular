@@ -7,6 +7,9 @@ import { RouterModule } from '@angular/router';
 import { NavigationComponent } from './pages/home/navigation/navigation.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,7 +21,14 @@ import { ContactComponent } from './pages/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule, 
+    RouterModule,
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

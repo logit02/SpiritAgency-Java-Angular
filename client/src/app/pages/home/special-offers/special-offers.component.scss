@@ -1,11 +1,12 @@
 .offer-wrapper{
-    height: 90vh;
+    height: max-content;
+    background-color: red;
     background-color: #fefbfb;
-    padding: 0 50px;
+    padding: 70px;
     align-items: center;
     text-align: center;
 }
-.item-image{ 
+.item-image{
     width: 80%;
     height: 90%;
     border-radius: 7px;
@@ -15,9 +16,9 @@
     font-family: "Montserrat";
     font-weight: 800;
     font-size: 30px;
-    color: #1f3348; 
+    color: #1f3348;
 }
-.offer-desc{ 
+.offer-desc{
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 14px;
@@ -34,7 +35,7 @@
     padding-top: 6vh;
 }
 
-.item { 
+.item {
     width: 30vw;
     display: flex;
     flex-direction: column;
@@ -67,13 +68,18 @@
     border:solid 1px #6347f9;
 }
 .more-items{
-    margin-top: 7vh; 
+    margin-top: 50px;
     width: 10vw;
-    height: 5vh;
+    height: 40px;
     color: #6347f9;
-    background-color: white;
+    background-color: #fefbfb;
     border-radius: 7px;
     border:solid 1px #6347f9;
+}
+.more-items:hover{
+  background-color: #6347f9;
+  color: white;
+
 }
 .icons {
     height: 30px;

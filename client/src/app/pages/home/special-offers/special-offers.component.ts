@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {TourService} from "../../../services/tour.service";
+import {ITour} from "../../../models/tour.model";
 
 @Component({
   selector: 'app-special-offers',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpecialOffersComponent implements OnInit {
 
-  constructor() { }
+  tours: ITour[];
+  constructor(
+    private _tourService: TourService,
+  ) { }
 
   ngOnInit(): void {
+    this._tourService.getAllTours().subscribe(data => {
+      this.tours = data;
+    })
   }
 
 }

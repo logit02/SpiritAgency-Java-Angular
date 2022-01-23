@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Location} from "@angular/common";
+import {ITour} from "../../models/tour.model";
+import {TourService} from "../../services/tour.service";
 
 @Component({
   selector: 'app-destinations',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./destinations.component.scss']
 })
 export class DestinationsComponent implements OnInit {
-
-  constructor() { }
+  id=4;
+  tours: ITour[];
+  constructor(
+    private _tourService: TourService,
+  ) { }
 
   ngOnInit(): void {
+    this._tourService.getAllTours().subscribe(data => {
+      this.tours = data;
+    })
   }
 
 }

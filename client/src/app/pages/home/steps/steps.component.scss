@@ -1,7 +1,7 @@
-.step-wrapper { 
-    height: 70vh;
+.step-wrapper {
+    height:max-content;
     background-color: #fefbfb;
-    padding: 0 50px;
+    padding: 100px 50px;
     display: flex;
     align-items: center;
 }
@@ -11,18 +11,18 @@
     text-align: left;
     padding: 10px;
 }
-.title{ 
+.title{
     font-family: "Montserrat";
     font-weight: 800;
     font-size: 23px;
-    color: #1f3348; 
+    color: #1f3348;
 }
-.desc{ 
+.desc{
     padding-top: 20px;
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 16px;
-    color: #1f3348; 
+    color: #1f3348;
     line-height: 20px;
     opacity: 0.7;
 }
@@ -30,5 +30,5 @@
     height: 65px;
     width: 65px;
     padding-bottom: 20px;
- 
+
 }

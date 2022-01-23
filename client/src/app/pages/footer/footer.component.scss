@@ -1,7 +1,7 @@
 .footer-wrapper {
     margin-top: 7px;
     height: 30vh;
-    background-color: #fefbfb;
+    background-color: #6347f9;
     padding: 0 50px;
     display: flex;
     flex-direction: row;
@@ -12,10 +12,10 @@
     font-family: "Montserrat";
     font-weight: 800;
     font-size: 26px;
-    color: #1f3348;
+    color: whitesmoke;
 }
 
-.links{ 
+.links{
    display: flex;
    flex-direction: column;
    text-align: left;
@@ -24,11 +24,11 @@
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 14px;
-    color: #1f3348;
+    color: whitesmoke;
     opacity: 0.8;
     line-height: 30px;
 }
-.logo{ 
+.logo{
     height: 40px;
     width: 40px;
     padding-bottom: 5px;

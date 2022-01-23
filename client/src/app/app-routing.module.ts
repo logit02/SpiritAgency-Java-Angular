@@ -6,6 +6,11 @@ const routes: Routes = [
     path: '' ,
     children:[
       {
+        path: '',
+        redirectTo:'home',
+        pathMatch:'full',
+      },
+      {
         path: 'blog',
         loadChildren: () => import('./pages/blog/blog.module').then(m => m.BlogModule)
       },
@@ -33,4 +38,3 @@ export class AppRoutingModule { }
 
 
 
-   
